@@ -1,0 +1,7 @@
+<div class="modal-wrapper" *ngIf="showModal">
+  <p>
+    Are you sure you want to delete all messages?
+  </p>
+  <div class="button cancel" (click)="closeModal()">No</div>
+  <div class="button sumbit" (click)="deleteAllMessages()">Yes, I want to delete</div>
+</div>

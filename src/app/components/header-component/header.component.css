@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+h2 {
+  margin: 0;
+}
+.header_wrapper {
+
+  height: 116px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.nav_panel {
+  height: 50%;
+  max-height: 58px;
+  width: 100%;
+  padding: 0 15px;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  border-bottom: 1px solid #b3b3b3;
+  border-top: 1px solid #b3b3b3;
+}
+
+.nav_panel_wrapper {
+  text-align: center;
+  width: 100%;
+}
+.nav_panel_wrapper h2 {
+  color: #42352c;
+}
+
+.hamberger_menu {
+  width: 42px;
+  height: 40px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.hamberger_menu:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+.hamberger_menu_line_wrapper {
+  height: 100%;
+  padding: 10px 0;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+.hamberger_menu_line_wrapper div {
+  width: 20px;
+  min-height: 2px;
+  background-color: #878787;
+}
+.hamberger_menu_line_wrapper div:not(:last-child) {
+  margin-bottom: 4px;
+}
+/*SUBHEADER*/
+.subheader {
+  background-color: #e5e5e5;
+  height: 50%;
+  max-height: 58px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+.subheader__messages_title {
+  font-size: 30px;
+  color: #433027;
+  margin: 0;
+}
+
+.subheader__messages_controls {
+  height: 36px;
+  border: 2px solid #ff005a;
+  border-radius: 5px;
+  font-size: 16px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+.subheader-control {
+  line-height: 36px;
+  padding: 0 13px;
+  height: 100%;
+}
+.subheader-control:hover {
+  opacity: 0.2;
+  cursor: pointer;
+}
+.subheader__messages_controls_buttons__export {
+  background-color: #ff005a;
+  color: #ffffff;
+}
+.subheader__messages_controls_buttons__delete_all {
+  background-color: #ffffff;
+  color: #ff005a;
+}
+
+
+@media screen and (max-width: 480px) {
+  .subheader {
+    padding: 0 15px;
+  }
+  .nav_panel_wrapper {
+    font-size: 16px;
+  }
+  .subheader__messages_title {
+    font-size: 30px;
+  }
+  .subheader-control {
+    line-height: 30px;
+    padding: 0 13px;
+    height: 100%;
+  }
+  .subheader__messages_controls {
+    height: 30px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .subheader {
+    padding: 0 15px;
+  }
+  .nav_panel_wrapper {
+    font-size: 12px;
+  }
+  .subheader__messages_title {
+    font-size: 24px;
+  }
+  .subheader-control {
+    line-height: 24px;
+    padding: 0 13px;
+    height: 100%;
+  }
+  .subheader__messages_controls {
+    height: 24px;
+    font-size: 10px;
+  }
+}

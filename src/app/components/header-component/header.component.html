@@ -1,0 +1,35 @@
+<div class="header_wrapper">
+  <div class="nav_panel">
+    <div class="nav_panel_wrapper">
+      <h2 class="app-name">Messanger</h2>
+    </div>
+    <div class="hamberger_menu">
+      <div class="hamberger_menu_line_wrapper">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="subheader">
+
+    <h2 class="subheader__messages_title">
+      Messages
+    </h2>
+    <app-modal-export  [(showModal)]="showExportDataModal"></app-modal-export>
+    <app-modal-delete-all  [(showModal)]="showDeleteAllMessagesModal"></app-modal-delete-all>
+    <div class="subheader__messages_controls">
+      <div class="subheader-control subheader__messages_controls_buttons__export" (click)="exportData
+      ()">
+        Export
+      </div>
+      <div class="subheader-control subheader__messages_controls_buttons__delete_all" (click)="deleteAllMessages
+      ()">
+        delete all
+      </div>
+
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,54 @@
+.modal-wrapper {
+  border-radius: 5px;
+  padding: 35px 55px;
+  position: fixed;
+  z-index: 4;
+  top: 30%;
+  transform: translateY(-50%);
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+  -webkit-box-shadow: -2px 3px 35px 0px rgba(0,0,0,0.58);
+  -moz-box-shadow: -2px 3px 35px 0px rgba(0,0,0,0.58);
+  box-shadow: -2px 3px 35px 0px rgba(0,0,0,0.58);
+  text-align: center;
+  font-size: 26px;
+  color: #575E6B;
+}
+
+.button {
+  border-radius: 5px;
+  padding: 8px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+.button:hover {
+  cursor: pointer;
+}
+
+.cancel {
+  background-color: #3FC380;
+  border-radius: 5px;
+  padding: 8px;
+}
+.cancel:hover {
+  background-color: #26A65B;
+  cursor: pointer;
+}
+
+.sumbit {
+  background-color: #EF4836;
+}
+.sumbit:hover {
+  background-color: #CF000F;
+}
+
+@media screen and (max-width: 480px) {
+  .modal-wrapper {
+    padding: 15px 20px;
+    font-size: 16px;
+  }
+  .button {
+    padding: 4px;
+  }
+}

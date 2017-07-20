@@ -1,0 +1,38 @@
+<div class="chat-wrapper">
+  <div class="chat__messages_chat_screen">
+
+
+    <!--USERS MESSAGE-->
+    <div *ngFor="let msg of messages ; let i = index">
+      <div class="message chat__users_message " *ngIf="msg.author === 'You'; else opponent">
+        <div class="chat_message__title">
+          <span class="chat_message__date">({{msg.time | date:'yyyy-MM-dd HH:mm:ss'}})</span>
+          <div class="trash_icon__wrapper" (click)="deleteMessage(i)">
+            <img src="../assets/img/trash.svg" alt="trash"  >
+          </div>
+        </div>
+        <div class="chat_message__text">
+          {{msg.text}}
+        </div>
+      </div>
+
+      <ng-template  #opponent>
+        <div class="message chat__opponents_message">
+          <div class="chat_message__title">
+            <div class="opponents_message__info">
+              <span class="chat_message__authors_name">{{msg.author}}</span>
+              <span class="chat_message__date">({{msg.time | date:'yyyy-MM-dd HH:mm:ss'}})</span>
+            </div>
+            <div class="trash_icon__wrapper"  (click)="deleteMessage(i)">
+              <img src="../assets/img/trash.svg" alt="trash">
+            </div>
+          </div>
+
+          <div class="chat_message__text ">
+            {{msg.text}}
+          </div>
+        </div>
+      </ng-template>
+    </div>
+  </div>
+</div>

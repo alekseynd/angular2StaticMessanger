@@ -1,0 +1,85 @@
+.chat-wrapper {
+  /*min-height: 50vh;*/
+  padding-top:  116px;
+  padding-bottom: 138px;
+}
+.chat__messages_chat_screen {
+  padding: 20px 15px 0px 15px;
+  overflow: auto;
+  padding-right: 15px;
+  height: calc(100vh - 280px);
+}
+
+.chat__messages_chat_screen::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.chat__messages_chat_screen::-webkit-scrollbar {
+  width: 6px;
+
+  background-color: transparent;
+}
+.chat__messages_chat_screen::-webkit-scrollbar-thumb {
+  background-color: #a0b4d3;
+  border-radius: 6px;
+}
+
+.chat_message__title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+.message {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 1px 0 0 #c4ced1;
+  padding: 15px 20px;
+}
+
+.chat__messages_chat_screen .trash_icon__wrapper {
+  width: 18px;
+  height: 18px;
+}
+.chat__messages_chat_screen .trash_icon__wrapper:hover {
+  cursor: pointer;
+  opacity: 0.2;
+}
+
+.chat__messages_chat_screen .trash_icon__wrapper img {
+  width: 100%;
+}
+
+
+.chat_message__title {
+  margin-bottom: 16px;
+}
+.chat_message__text {
+  word-wrap: break-word;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+/* start opponents message */
+.opponents_message__info {
+  font-size: 16px;
+  color: #2d3d43;
+}
+.opponents_message__info .chat_message__authors_name {
+  font-style: italic;
+  font-size: 16px;
+}
+
+.chat__opponents_message {
+  background-color: #daeff6;
+}
+/* end opponents message */
+
+
+/* start users message */
+.chat__users_message {
+  background-color: #d9ffed;
+  margin-left: 60px;
+}
